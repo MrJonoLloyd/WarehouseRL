@@ -1,0 +1,8 @@
+# Folders
+__pycache__/
+.vscode/
+logs/
+train/
+
+# Files
+test.py
