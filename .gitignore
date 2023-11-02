@@ -3,6 +3,7 @@ __pycache__/
 .vscode/
 logs/
 train/
+venv/**
 
 # Files
 test.py
