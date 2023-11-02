@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 3. Play the game
-   You can play the game before you train the model by setting the following at the top of `main.py`
+   You can play the game before you train the model by setting the following at the top of `main.py`:
     ```python
     PLAYER_TEST = 1
     CREATE_MODEL = 0
@@ -38,16 +38,35 @@ pip install -r requirements.txt
     3 - left
     Watch your yellow character move around. Try pick up an orange item and place it on the pallet (brown)
 
-4. Train the model
-   1. Set the following in `main.py`
-      ```python
-      PLAYER_TEST = 0
-      CREATE_MODEL = 1
-      LOAD_MODEL = 0
-      TRAIN_MODEL = 1
-      TEST_MODEL = 0
-      ```
-      This bit takes a while, depending on the number of timesteps (you can change this in `main.py`)
+4. Train the model  
+   Set the following in `main.py`:
+   ```python
+   PLAYER_TEST = 0
+   CREATE_MODEL = 1
+   LOAD_MODEL = 0
+   TRAIN_MODEL = 1
+   TEST_MODEL = 0
+   ```
+   then run 
+   ```sh
+   python main.py
+   ```
+   This bit takes a while, depending on the number of timesteps (you can change this in `main.py`)
+
+5. Watch it go  
+   Set the following in `main.py`:
+   ```python
+   PLAYER_TEST = 0
+   CREATE_MODEL = 0
+   LOAD_MODEL = 1
+   TRAIN_MODEL = 0
+   TEST_MODEL = 1
+   ```
+   then run
+   ```sh
+   python main.py
+   ```
+   ![](docs/screenshot.jpg)
 ## About
 Jono is a cool guy
 
